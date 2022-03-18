@@ -1,0 +1,4 @@
+/audio    - contem as faixas com instrumentos separdos
+/sequence - contem a sequencias: facil, medio, dificil
+about.txt - todas as informações da musica para o jogo
+song.ogg  - faixa com musica tocando com todos os instrumentos

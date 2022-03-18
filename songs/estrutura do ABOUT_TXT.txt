@@ -1,0 +1,10 @@
+<ARTISTA>
+<MUSICA>
+<DURACAO mm:ss>
+<instrumentCode1> <labelInstrument1>     ( 15 --  ) -> Representa um intrumento inexistente;
+<instrumentCode2> <labelInstrument2>                   O jogo carrega 4 instrumentos no menu;
+<instrumentCode3> <labelInstrument3>                   Se não há mais intrumentos, usa-se este codigo;
+<instrumentCode4> <labelInstrument4>
+<dificuldade> ---------------------------> String de 3 caractreres (facil, mdio, dificil);
+					   			     1 -> SIM     0->NAO      
+					   ( 110 ) Representa que só existe a opçao <facil> e <média> no jogo;
