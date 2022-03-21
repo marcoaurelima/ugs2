@@ -26,8 +26,90 @@ sf::Text& UGSFunctions::create_SFtext(std::string fontPath, int size, sf::Color 
 
 }
 
-bool UGSFunctions::key_pressed_winapi(int key){
+bool UGSFunctions::key_pressed(int key){
     //return (GetAsyncKeyState(key) < 0);
+
+    switch (key) {
+        case 'A':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+            break;
+        case 'B':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::B);
+            break;
+        case 'C':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::C);
+            break;
+        case 'D':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::D);
+            break;
+        case 'E':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::E);
+            break;
+        case 'F':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::F);
+            break;
+        case 'G':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::G);
+            break;
+        case 'H':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::H);
+            break;
+        case 'I':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::I);
+            break;
+        case 'J':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::J);
+            break;
+        case 'K':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::K);
+            break;
+        case 'L':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::L);
+            break;
+        case 'M':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::M);
+            break;
+        case 'N':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::N);
+            break;
+        case 'O':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::O);
+            break;
+        case 'P':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::P);
+            break;
+        case 'Q':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::Q);
+            break;
+        case 'R':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::R);
+            break;
+        case 'S':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::S);
+            break;
+        case 'T':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::T);
+            break;
+        case 'U':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::U);
+            break;
+        case 'V':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::V);
+            break;
+        case 'W':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::W);
+            break;
+        case 'X':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::X);
+            break;
+        case 'Y':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::Y);
+            break;
+        case 'Z':
+            return sf::Keyboard::isKeyPressed(sf::Keyboard::Z);
+            break;
+    }
+
     return false;
 }
 

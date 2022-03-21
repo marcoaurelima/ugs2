@@ -31,7 +31,7 @@ class UGSFunctions{
     sf::Sprite& create_SFsprite(std::string imagePath);
     sf::Music&  create_SFmusic(std::string musicPath);
     sf::Text&   create_SFtext(std::string fontPath, int size, sf::Color color, std::string text);
-    bool key_pressed_winapi(int key);
+    bool key_pressed(int key);
     bool sprite_colision(sf::Sprite sprite1,         sf::Sprite sprite2);
     bool mouseColision  (sf::RectangleShape& sprite, sf::RenderWindow& window);
     bool mouseColision  (sf::Sprite&         sprite, sf::RenderWindow& window);

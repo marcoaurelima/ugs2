@@ -204,7 +204,7 @@ void UGSGameMajor::gameButtonsControl(){
     static bool pressControl[5] = {true,true,true,true,true};
 
 
-    if(key_pressed_winapi(mKeyboardConfig[0]) ){
+    if(key_pressed(mKeyboardConfig[0]) ){
 
         mHole[0].setColor(sf::Color(0,255,0,255));
 
@@ -244,7 +244,7 @@ void UGSGameMajor::gameButtonsControl(){
 
 
 
-    if(key_pressed_winapi(mKeyboardConfig[1])){
+    if(key_pressed(mKeyboardConfig[1])){
         mHole[1].setColor(sf::Color(255,0,0,255));
 
         for(unsigned i=0;i<mTile.size();i++){
@@ -279,7 +279,7 @@ void UGSGameMajor::gameButtonsControl(){
         startShineHit(UGSColor::RED, true);
     }
 
-    if(key_pressed_winapi(mKeyboardConfig[2]) || key_pressed_winapi(mKeyboardConfig[3])){
+    if(key_pressed(mKeyboardConfig[2]) || key_pressed(mKeyboardConfig[3])){
         mHole[2].setColor(sf::Color(255,255,0,255));
 
         for(unsigned i=0;i<mTile.size();i++){
@@ -314,7 +314,7 @@ void UGSGameMajor::gameButtonsControl(){
         startShineHit(UGSColor::YELLOW, true);
     }
 
-    if(key_pressed_winapi(mKeyboardConfig[4])){
+    if(key_pressed(mKeyboardConfig[4])){
         mHole[3].setColor(sf::Color(0,0,255,255));
 
         for(unsigned i=0;i<mTile.size();i++){
@@ -349,7 +349,7 @@ void UGSGameMajor::gameButtonsControl(){
         startShineHit(UGSColor::BLUE, true);
     }
 
-    if(key_pressed_winapi(mKeyboardConfig[5])){
+    if(key_pressed(mKeyboardConfig[5])){
         mHole[4].setColor(sf::Color(255,112,0));
 
         for(unsigned i=0;i<mTile.size();i++){
