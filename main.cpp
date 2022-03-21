@@ -64,11 +64,19 @@ void screenMain(sf::RenderWindow& window){ /// menu principal
 
 int main()
 {
+/*
+    //unsigned vmodescount = sf::VideoMode::GetModesCount();
 
+    for(unsigned i=0; i<3; i++){
+        sf::VideoMode Mode = sf::VideoMode::getMode(i);
+        std::cout << "Mode " << Mode.width << "-" << Mode.height << "-" << Mode.bitsPerPixel << " is valid" << std::endl;
+   }
+
+    return 0;
     //openIntro();
-    //return 0;
+    //return 0;*/
 
-    sf::RenderWindow window(sf::VideoMode(1366, 768), "Ultimate Guitar Show 2", sf::Style::Fullscreen);
+    sf::RenderWindow window(sf::VideoMode(1366, 768), "Ultimate Guitar Show 2", sf::Style::Default);
     //window.setPosition(sf::Vector2i(0,0));
     window.setVerticalSyncEnabled(true);
 
