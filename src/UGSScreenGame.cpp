@@ -1,4 +1,4 @@
-#include "../include/UGSScreenGame.h"
+#include "UGSScreenGame.h"
 
 UGSScreenGame::UGSScreenGame(Game1playerInfo* gameInfo){
     mPermissionToShow = true;
@@ -46,7 +46,7 @@ UGSScreenGame::UGSScreenGame(Game1playerInfo* gameInfo){
     mRock = new UGSRock(560,570);
     mRock->setBandName(gameInfo->bandName);
     mRock->setMusicName(gameInfo->misicName);
-    //for(int i=0;i<100;i++){ /// COLOQUEI NO LACO FOR PRA EVITAR UM BUG. ELE SO INICIA CORRETAMENTE DEPOIS QUE SE COLOCA Vï¿½RIOS VALORES
+    //for(int i=0;i<100;i++){ /// COLOQUEI NO LACO FOR PRA EVITAR UM BUG. ELE SO INICIA CORRETAMENTE DEPOIS QUE SE COLOCA VÁRIOS VALORES
     mRock->setRockStatus(50);
     //}
 
@@ -61,13 +61,15 @@ UGSScreenGame::UGSScreenGame()
     mBackground = create_SFsprite("GUI/widgets/BackgroundGame.png");
     mBGpb.setColor(sf::Color(255,255,255,80));
 
+//    mGameMajor = new UGSGameMajor(-500, 20, 8, "80mpm.ogg", "sequence.txt", "", "");
+
     mView      = sf::View(sf::FloatRect(-500,17,500,654));
     mView.setViewport(sf::FloatRect(0.020,0.030,0.37,0.851));
 
     mScoreMajor = new UGSScoreMajor(87,683);
 
     mRock = new UGSRock(560,570);
-    for(int i=0;i<100;i++){ /// COLOQUEI NO LACO FOR PRA EVITAR UM BUG. ELE SO INICIA CORRETAMENTE DEPOIS QUE SE COLOCA Vï¿½RIOS VALORES
+    for(int i=0;i<100;i++){ /// COLOQUEI NO LACO FOR PRA EVITAR UM BUG. ELE SO INICIA CORRETAMENTE DEPOIS QUE SE COLOCA VÁRIOS VALORES
         mRock->setRockStatus(i);
     }
 

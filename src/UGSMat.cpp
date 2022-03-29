@@ -1,4 +1,4 @@
-#include "../include/UGSMat.h"
+#include "UGSMat.h"
 
 UGSMat::UGSMat(){
 
@@ -6,8 +6,8 @@ UGSMat::UGSMat(){
 
 UGSMat::UGSMat(int posX, int posY, int speed, int transparency) : mPosX(posX), mPosY(3), mSpeed(speed)
 {
-    /// O posY terï¿½ esse valor sempre (3) por motivo de sincronia.
-    /// Ele nï¿½o precisa de mudanï¿½a em relaï¿½ï¿½ao ao Y pq ele ocupa a tela toda verticalmente;
+    /// O posY terá esse valor sempre (3) por motivo de sincronia.
+    /// Ele não precisa de mudança em relaççao ao Y pq ele ocupa a tela toda verticalmente;
     /// Vou manter o posY no construtor pra manter no padrao das classes do jogo .
     posY = 3;
 

@@ -1,4 +1,4 @@
-#include "../include/UGSScoreMajor.h"
+#include "UGSScoreMajor.h"
 
 
 UGSScoreMajor::UGSScoreMajor(int posX, int posY)

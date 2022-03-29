@@ -1,6 +1,6 @@
 #ifndef FUNCTIONS_H_INCLUDED
 #define FUNCTIONS_H_INCLUDED
-#include "../include/UGSfunctions.h"
+#include "UGSfunctions.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
 //#include <windows.h>
@@ -25,6 +25,7 @@ sf::Text& UGSFunctions::create_SFtext(std::string fontPath, int size, sf::Color 
     return *t;
 
 }
+
 
 bool UGSFunctions::key_pressed(int key){
     //return (GetAsyncKeyState(key) < 0);
@@ -112,6 +113,7 @@ bool UGSFunctions::key_pressed(int key){
 
     return false;
 }
+
 
 
 bool UGSFunctions::sprite_colision(sf::Sprite sprite1, sf::Sprite sprite2){

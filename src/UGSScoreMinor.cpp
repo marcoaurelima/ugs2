@@ -1,4 +1,4 @@
-#include "../include/UGSScoreMinor.h"
+#include "UGSScoreMinor.h"
 
 UGSScoreMinor::UGSScoreMinor(int posX, int posY)
 {

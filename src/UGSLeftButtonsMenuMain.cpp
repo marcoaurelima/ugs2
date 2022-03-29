@@ -1,4 +1,4 @@
-#include "../include/UGSLeftButtonsMenuMain.h"
+#include "UGSLeftButtonsMenuMain.h"
 
 UGSLeftButtonsMenuMain::UGSLeftButtonsMenuMain()
 {

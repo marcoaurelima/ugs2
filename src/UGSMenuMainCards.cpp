@@ -1,4 +1,4 @@
-#include "../include/UGSMenuMainCards.h"
+#include "UGSMenuMainCards.h"
 
 UGSMenuMainCards::UGSMenuMainCards()
 {

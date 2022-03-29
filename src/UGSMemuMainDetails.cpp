@@ -1,4 +1,4 @@
-#include "../include/UGSMemuMainDetails.h"
+#include "UGSMemuMainDetails.h"
 
 UGSMemuMainDetails::UGSMemuMainDetails()
 {

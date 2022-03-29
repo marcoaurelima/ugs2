@@ -1,4 +1,4 @@
-#include "../include/UGSRock.h"
+#include "UGSRock.h"
 
 UGSRock::UGSRock(int posX, int posY)
 {

@@ -1,4 +1,4 @@
-#include "../include/UGSMenuMain.h"
+#include "UGSMenuMain.h"
 
 UGSMenuMain::UGSMenuMain()
 {
@@ -7,7 +7,7 @@ UGSMenuMain::UGSMenuMain()
     mLeftButtons.push_back(UGSLeftButtonsMenuMain(43, 377       , "NOVO JOGO"));
     mLeftButtons.push_back(UGSLeftButtonsMenuMain(43, 377+(51*1), "CRIAR SERVER"));
     mLeftButtons.push_back(UGSLeftButtonsMenuMain(43, 377+(51*2), "ENCONTRAR SERVER"));
-    mLeftButtons.push_back(UGSLeftButtonsMenuMain(43, 377+(51*3), "CONFIGURACOES"));
+    mLeftButtons.push_back(UGSLeftButtonsMenuMain(43, 377+(51*3), "CONFIGURAÇÕES"));
     mLeftButtons.push_back(UGSLeftButtonsMenuMain(43, 377+(51*4), "SOBRE"));
 
     //ctor
@@ -25,7 +25,7 @@ void UGSMenuMain::draw(sf::RenderWindow& window){
     window.draw(bgpb);
 
     /// compara todos os botoes e deixa apenas 1 botao selecionado por vez;
-    /// quando clicar fora o botï¿½o nao irï¿½ desSelecionar
+    /// quando clicar fora o botão nao irá desSelecionar
     for(unsigned i=0;i<mLeftButtons.size();i++){
         if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
             if(UGSFunctions::mouseColision(mLeftButtons[i].getSprite(), window)){

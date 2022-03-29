@@ -1,6 +1,6 @@
-#include "../include/UGSNotasConsecutivas.h"
+#include "UGSNotasConsecutivas.h"
 
-#include "../include/functions.h"
+#include "functions.h"
 
 UGSNotasConsecutivas::UGSNotasConsecutivas(int posX, int posY) : posX(posX), posY(posY)
 {

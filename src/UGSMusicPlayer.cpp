@@ -1,8 +1,8 @@
-#include "../include/UGSMusicPlayer.h"
+#include "UGSMusicPlayer.h"
 
 UGSMusicPlayer::UGSMusicPlayer(int posX, int posY)
 {
-    posY = posY - 14; /// Desconto pela imprecisao na localizaï¿½ï¿½o Y da fonte;
+    posY = posY - 14; /// Desconto pela imprecisao na localização Y da fonte;
 
     mIcon = create_SFtext("fonts/MUSICELE.TTF", 76, sf::Color::White, "f");
     mIcon.setPosition(posX, posY);

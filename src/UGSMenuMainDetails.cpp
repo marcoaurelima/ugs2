@@ -1,6 +1,6 @@
-#include "../include/UGSMenuMainDetails.h"
+#include "UGSMenuMainDetails.h"
 
-/// OBS.: a cada mudanï¿½a que for ser efetuada, deve-se criar uma nova instancia dessa classe!!!! /////////
+/// OBS.: a cada mudança que for ser efetuada, deve-se criar uma nova instancia dessa classe!!!! /////////
 
 UGSMenuMainDetails::UGSMenuMainDetails()
 {
@@ -34,9 +34,9 @@ UGSMenuMainDetails::UGSMenuMainDetails()
     mInstruments.push_back(UGSFunctions::create_SFsprite("GUI/instruments/small/14.png"));
     mInstruments.push_back(UGSFunctions::create_SFsprite("GUI/instruments/small/0.png"));
     mInstruments[15].setColor(sf::Color::Transparent);
-    /// este sprite mInstruments[15] representarï¿½ provisoriamente um instrumento inexistente//sera transparente
+    /// este sprite mInstruments[15] representará provisoriamente um instrumento inexistente//sera transparente
     for(unsigned i=0;i<mInstruments.size();i++){
-        mInstruments[i].setPosition(0, -100); /// posiï¿½ï¿½o deixarï¿½ fora de vista usando posicao fora da tela
+        mInstruments[i].setPosition(0, -100); /// posição deixará fora de vista usando posicao fora da tela
     }
 
 

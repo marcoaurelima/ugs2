@@ -1,4 +1,4 @@
-#include "../include/UGSMenuMainNovoJogoStep2.h"
+#include "UGSMenuMainNovoJogoStep2.h"
 
 UGSMenuMainNovoJogoStep2::UGSMenuMainNovoJogoStep2(DetailsInfo* details)
 {
@@ -68,7 +68,7 @@ UGSMenuMainNovoJogoStep2::UGSMenuMainNovoJogoStep2(DetailsInfo* details)
         mInstrumentsName[i].setFillColor(mInstruments[i].getColor());
     }
 
-    /// estou fazendo dessa maneira pq no padrao do info, obrigatoriamente serï¿½ lido 4 instrumentos//
+    /// estou fazendo dessa maneira pq no padrao do info, obrigatoriamente seré lido 4 instrumentos//
     /// quando nao existir instrumentos, ele sera um sprite transparente
 
 
@@ -170,7 +170,7 @@ void UGSMenuMainNovoJogoStep2::draw(sf::RenderWindow& window){
     frameCount += 0.1;
     for(unsigned i=0;i<mInstrumentsSelection.size();i++){
         if(mouseColision(mInstrumentsSelection[i], window)){
-            if(!(mInstruments[i].getColor().a < 255) && !mMenuDificultyInit){ // So irï¿½ aparecer se mInstrument nï¿½o for transparente
+            if(!(mInstruments[i].getColor().a < 255) && !mMenuDificultyInit){ // So irá aparecer se mInstrument não for transparente
                 mInstrumentsSelection[i].setColor(sf::Color(255,255,255, abs(sin(frameCount)*255)));
                 if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
                     if(i==0){ mInstrumentCodeChoose = mDetails->code1; } else
