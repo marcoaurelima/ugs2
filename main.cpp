@@ -68,7 +68,7 @@ int main()
     //openIntro();
     //return 0;
 
-    sf::RenderWindow window(sf::VideoMode(1368, 768), "UGS2 - Ultimate Guitar Show", sf::Style::Fullscreen);
+    sf::RenderWindow window(sf::VideoMode(1368, 768), "UGS2 - Ultimate Guitar Show", sf::Style::Default);
     //window.setPosition(sf::Vector2i(0,0));
     window.setVerticalSyncEnabled(true);
 
