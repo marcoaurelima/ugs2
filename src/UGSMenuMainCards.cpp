@@ -25,9 +25,6 @@ UGSMenuMainCards::UGSMenuMainCards(int posX, int posY, int folderNumber) : mPosX
     mPhoto.setOrigin  (mPhoto.getLocalBounds().width/2, mPhoto.getLocalBounds().height/2);
     mPhoto.setPosition(mPosX-5, mPosY-18);
 
-    ss.str("");
-    ss << "songs/" << folderNumber << "/about.txt";
-
     char artist[100];
     char music[100];
     char duration[100];
@@ -42,22 +39,43 @@ UGSMenuMainCards::UGSMenuMainCards(int posX, int posY, int folderNumber) : mPosX
     char dificulty[10];
 
 
+    ss.str("");
+    ss << "songs/" << folderNumber << "/info/about.txt";
     FILE* file2 = fopen(ss.str().c_str(), "r");
-
     fscanf(file2, " %[^\n]s", artist);
     fscanf(file2, " %[^\n]s", music);
     fscanf(file2, " %[^\n]s", duration);
+    fscanf(file2, " %[^\n]s", dificulty);
+    fclose(file2);
+
+    ss.str("");
+    ss << "songs/" << folderNumber << "/info/instrument1.txt";
+    file2 = fopen(ss.str().c_str(), "r");
     fscanf(file2, " %d", &code1);
     fscanf(file2, " %[^\n]s", label1);
+    fclose(file2);
+
+    ss.str("");
+    ss << "songs/" << folderNumber << "/info/instrument2.txt";
+    file2 = fopen(ss.str().c_str(), "r");
     fscanf(file2, " %d", &code2);
     fscanf(file2, " %[^\n]s", label2);
+    fclose(file2);
+
+    ss.str("");
+    ss << "songs/" << folderNumber << "/info/instrument3.txt";
+    file2 = fopen(ss.str().c_str(), "r");
     fscanf(file2, " %d", &code3);
     fscanf(file2, " %[^\n]s", label3);
+    fclose(file2);
+
+    ss.str("");
+    ss << "songs/" << folderNumber << "/info/instrument4.txt";
+    file2 = fopen(ss.str().c_str(), "r");
     fscanf(file2, " %d", &code4);
     fscanf(file2, " %[^\n]s", label4);
-    fscanf(file2, " %[^\n]s", dificulty);
-
     fclose(file2);
+
 
     mDetail.folderNumber     = folderNumber;
     mDetail.artist           = artist;

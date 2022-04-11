@@ -14,7 +14,7 @@ UGSMenuMainNovoJogo::UGSMenuMainNovoJogo()
     for(;;){
         index++;
         std::stringstream ss;
-        ss << "songs/" << index << "/about.txt";
+        ss << "songs/" << index << "/info/about.txt";
         FILE* file = fopen(ss.str().c_str(), "r");
         if(file == NULL){break;}
         mMenuCards.push_back       (new UGSMenuMainCards(492+(three*210), 296+(((index-1)/3)*243), index));
