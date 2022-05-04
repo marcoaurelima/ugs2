@@ -34,6 +34,9 @@ class UGSScreenGame : public UGSFunctions
         UGSNotasConsecutivas* mNotasConsec;
         sf::View mView;
 
+        sf::Sprite mTCC_BandBG;
+        sf::Sprite mTCC_BangLogo;
+
         bool mPermissionToShow;
 };
 

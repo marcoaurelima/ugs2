@@ -11,6 +11,16 @@ UGSScreenGame::UGSScreenGame(Game1playerInfo* gameInfo){
     mBackground = create_SFsprite("GUI/widgets/BackgroundGame.png");
     mBGpb.setColor(sf::Color(255,255,255,80));
 
+    mTCC_BandBG = create_SFsprite("songs/" + std::to_string(gameInfo->folderCode) + "/picture/poster.png");
+    mTCC_BandBG.setScale(0.49,0.49);
+    mTCC_BandBG.setPosition(670,130);
+    mTCC_BandBG.setColor(sf::Color(255,255,255,160));
+
+    mTCC_BangLogo = create_SFsprite("songs/" + std::to_string(gameInfo->folderCode) + "/picture/logo.png");
+    mTCC_BangLogo.setScale(0.8,0.8);
+    mTCC_BangLogo.setPosition(1120,340);
+    mTCC_BangLogo.setColor(sf::Color(255,255,255,230));
+
     std::string musicPath;
     std::string sequenceTilePath;
     std::string userName;
@@ -41,7 +51,10 @@ UGSScreenGame::UGSScreenGame(Game1playerInfo* gameInfo){
     mView      = sf::View(sf::FloatRect(-500,17,500,654));
     mView.setViewport(sf::FloatRect(0.020,0.030,0.37,0.851));
 
-    mScoreMajor = new UGSScoreMajor(87,683);
+    // ATENÇÃO: NÃO PAGUE ESTE COMENTÁRIO!!!
+    // - Devido ao TCC, não usarei esse widget pois nao irei precisar dele.
+    //mScoreMajor = new UGSScoreMajor(87,683);
+    mScoreMajor = new UGSScoreMajor(-1000,683);
 
     mRock = new UGSRock(560,570);
     mRock->setBandName(gameInfo->bandName);
@@ -50,7 +63,10 @@ UGSScreenGame::UGSScreenGame(Game1playerInfo* gameInfo){
     mRock->setRockStatus(50);
     //}
 
-    mNotasConsec = new UGSNotasConsecutivas(1085,586);
+    // ATENÇÃO: NÃO PAGUE ESTE COMENTÁRIO!!!
+    // - Devido ao TCC, não usarei esse widget pois nao irei precisar dele.
+    //mNotasConsec = new UGSNotasConsecutivas(1085,586);
+    mNotasConsec = new UGSNotasConsecutivas(3000,586);
 
     mMusicPlayer = new UGSMusicPlayer(570, 118);
 }
@@ -126,6 +142,8 @@ void UGSScreenGame::draw(sf::RenderWindow& window){
     }
     window.draw(mBackButton);
 
+    window.draw(mTCC_BandBG);
+    window.draw(mTCC_BangLogo);
 }
 
 bool UGSScreenGame::getPermissionToShow(){
